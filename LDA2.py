@@ -152,7 +152,7 @@ if __name__ == "__main__":
         classNameDict = {'Iris-setosa': 1 , 'Iris-versicolor': 0 ,'Iris-virginica': 2}
         print("==============================")
         ##The first 75 are used for training and the last 75 are used for testing
-        trainFeature, trainlabel, valFeature, vallabel = read_csv(r'C:\Users\Mechrevo\Desktop\春季课程各种信息\適応的メディア処理\iris.csv',75)
+        trainFeature, trainlabel, valFeature, vallabel = read_csv(r'C:\Users\Mechrevo\Desktop\iris.csv',75)
         lda = LinearDiscrtAnays()
         lda.train(trainFeature,trainlabel)
         pre = lda.predict(valFeature)
